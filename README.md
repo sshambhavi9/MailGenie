@@ -59,7 +59,7 @@ The digest will open automatically in your browser, showing sample categorized e
 
 No Gmail credentials are required in Demo Mode.
 
-🛠 Developer Setup (with Gmail API)
+## 🛠 Developer Setup (with Gmail API)
 
 If you want to integrate with your Gmail account:
 
@@ -123,7 +123,7 @@ MailGenie/
 ├── README.md
 ├── .gitignore
 
-🔒 Security
+## 🔒 Security
 
 .env is ignored in .gitignore
 
