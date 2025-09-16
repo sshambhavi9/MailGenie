@@ -10,7 +10,7 @@ Recruiters: you don’t need Gmail credentials to see MailGenie in action.
 You can run it in **Demo Mode** with sample emails and mock AI outputs.
 
 ```bash
-git clone https://github.com/<your-username>/mailgenie.git
+git clone https://github.com/sshambhavi9/mailgenie.git
 cd mailgenie
 python -m venv .venv
 source .venv/bin/activate   # macOS/Linux
