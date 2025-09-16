@@ -8,9 +8,6 @@ This repo includes a **Demo Mode** for recruiters to try the project **without G
 
 ## 🎥 Demo (Recruiters)
 
-- Demo video: `assets/demo.mp4`  
-- Screenshots: `assets/screenshot-1.png`, `assets/screenshot-2.png`  
-
 **Key point:** You **do not need Gmail credentials** to see MailGenie in action. Demo Mode loads sample emails and opens the digest automatically in your browser.
 
 ---
@@ -29,14 +26,13 @@ This repo includes a **Demo Mode** for recruiters to try the project **without G
 ## 🏃 Running Demo Mode (Recruiters)
 
 1. Clone the repository:
-
 git clone https://github.com/<your-username>/MailGenie.git
 cd MailGenie
 
 2. Create a virtual environment and activate it:
 python3 -m venv venv
 source venv/bin/activate   # macOS/Linux
-# venv\Scripts\activate    # Windows
+venv\Scripts\activate    # Windows
 
 3. Install dependencies:
 pip install -r requirements.txt
@@ -51,15 +47,15 @@ python3 gmail_fetch.py
 The digest will open automatically in your browser, showing sample categorized emails and summaries.
 
 ## 🛠 Developer Setup (with Gmail API)
-<details> <summary>Click to expand developer instructions</summary>
+
 Prerequisites
-Python 3.10+
+- Python 3.10+
 
-A Google Cloud project with Gmail API enabled
+- A Google Cloud project with Gmail API enabled
 
-OAuth credentials (Client ID + Secret)
+- OAuth credentials (Client ID + Secret)
 
-Ollama or compatible SLM server
+- Ollama or compatible SLM server
 
 Steps
 1. Clone the repository (if not already done):
@@ -69,15 +65,14 @@ cd MailGenie
 2. Copy .env.example to .env:
 cp .env.example .env
 
-3.Fill in your credentials and settings in .env:
-GOOGLE_CLIENT_ID=your-client-id
-GOOGLE_CLIENT_SECRET=your-client-secret
-GOOGLE_REDIRECT_URI=http://localhost:8080/oauth2callback
-GOOGLE_REFRESH_TOKEN=your-refresh-token
-OLLAMA_HOST=http://localhost:11434
-OLLAMA_MODEL=phi3
-LLM_MODE=online
-GMAIL_MODE=oauth
+3. Fill in your credentials and settings in .env:
+- GOOGLE_CLIENT_ID=your-client-id
+- GOOGLE_CLIENT_SECRET=your-client-secret
+- GOOGLE_REDIRECT_URI=http://localhost:8080/oauth2callback
+- GOOGLE_REFRESH_TOKEN=your-refresh-token
+- OLLAMA_HOST=http://localhost:11434
+- OLLAMA_MODEL=phi3
+- LLM_MODE=onlineGMAIL_MODE=oauth
 
 4. Install dependencies:
 python3 -m venv venv
