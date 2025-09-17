@@ -1,0 +1,16 @@
+# Core dependencies
+fastapi
+uvicorn
+
+# Google API (for real Gmail integration)
+google-api-python-client
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+httplib2
+
+# Local LLM integration
+ollama
+
+# Utilities
+python-dotenv
