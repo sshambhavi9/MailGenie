@@ -25,26 +25,19 @@ This repo includes a **Demo Mode** for recruiters to try the project **without G
 
 ## 🏃 Running Demo Mode (Recruiters)
 
-1. Clone the repository:
-git clone https://github.com/<your-username>/MailGenie.git
+# 1. Clone the repository
+git clone https://github.com/sshambhavi9/MailGenie.git
 cd MailGenie
 
-2. Create a virtual environment and activate it:
-python3 -m venv venv
-source venv/bin/activate   # macOS/Linux
-venv\Scripts\activate    # Windows
+# 2. Setup environment + install dependencies
+make setup
 
-3. Install dependencies:
-pip install -r requirements.txt
+# 3. Run in demo mode
+make demo
 
-4. Enable Demo Mode:
-echo "LLM_MODE=mock" > .env
-echo "GMAIL_MODE=mock" >> .env
-export $(cat .env | xargs)
+# Remove venv, cache files, and .env
+make clean  
 
-6. Run MailGenie:
-python3 gmail_fetch.py
-The digest will open automatically in your browser, showing sample categorized emails and summaries.
 
 ## 🛠 Developer Setup (with Gmail API)
 
