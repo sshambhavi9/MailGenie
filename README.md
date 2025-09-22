@@ -25,17 +25,17 @@ This repo includes a **Demo Mode** for recruiters to try the project **without G
 
 ## 🏃 Running Demo Mode (Recruiters)
 
-# 1. Clone the repository
+1. Clone the repository
 git clone https://github.com/sshambhavi9/MailGenie.git
 cd MailGenie
 
-# 2. Setup environment + install dependencies
+2. Setup environment + install dependencies
 make setup
 
-# 3. Run in demo mode
+3. Run in demo mode
 make demo
 
-# Remove venv, cache files, and .env
+4. Remove venv, cache files, and .env
 make clean  
 
 
